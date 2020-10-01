@@ -1,9 +1,9 @@
 <a href="https://www.youtube.com/claritycoders" target="_blank"><img src="https://i.imgur.com/sG7xxyc.png" title="Clarity Coders YouTube" /></a>
 # Create a bot using only image Processing. 
-> Code uses image processing and rules to play the Chrome Dino Game.
-> The location of the pixels will need to be updated in this file in order for it to work on your system.
-> This is a simple example showing how complicated a system like this can get even on a simple game.
-> Please check out the video if you need any extra help! 
+- Code uses image processing and rules to play the Chrome Dino Game.
+- The location of the pixels will need to be updated in this file in order for it to work on your system.
+- This is a simple example showing how complicated a system like this can get even on a simple game.
+- Please check out the video if you need any extra help! 
 
 ## Setup
 - Run CreateData.py it will allow you to locate the game window and data files.
