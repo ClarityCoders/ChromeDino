@@ -19,10 +19,10 @@ keyboard.release("space")
 
 program_time = time.time()
 episode_scores = []
-for i in range(1000):
+for i in range(5000):
     # Episode
     #start_ahead = random.randint(70, 115)
-    start_ahead = random.randint(70, 115)
+    start_ahead = random.randint(80, 120)
     ahead = start_ahead
     start_speedup = random.randint(190, 210)
     count = 0
@@ -43,7 +43,7 @@ for i in range(1000):
 
 
         if image[144][376] == zero:
-            ahead += 3
+            ahead += 4
             #print("Flipped")
             holder = zero
             zero = white

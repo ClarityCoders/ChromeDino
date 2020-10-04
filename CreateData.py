@@ -53,21 +53,21 @@ while True:
     # Day Check
     if image[34][ahead] != image[34][ahead - 10] or image[40][ahead] != image[40][ahead - 10] or image[37][ahead] != image[37][ahead - 10]:
         #print("space")
-        keyboard.release("down")
-        keyboard.press("space")
+        #keyboard.release("down")
+        #keyboard.press("space")
         time.sleep(0.027)
-        keyboard.release("space")
+        #keyboard.release("space")
         action = "jump"
     # Check for birds!
     #elif np.all(image[0][55:80] < 255):
     elif image[0][ahead] != image[0][ahead - 10] and image[0][ahead+2] != image[0][ahead - 10] and image[0][ahead+4] != image[0][ahead - 10] and image[0][ahead+6] != image[0][ahead - 10] and image[0][ahead+8] != image[0][ahead - 10] and image[0][ahead+10] != image[0][ahead - 10] and image[0][ahead+12] != image[0][ahead - 10] and image[0][ahead+14] != image[0][ahead - 10]:
         print("down")
-        keyboard.press("down")
+        #keyboard.press("down")
         action = "duck"
 
     # Check for end game!
     elif np.all(image[7][350:390] < 255) and image[0][375] > 0:
-        cv2.imwrite(f"END{count}.jpg", image)
+        #cv2.imwrite(f"END{count}.jpg", image)
         print("END")
         action = "end"
         image_data.append(image)
@@ -82,7 +82,7 @@ while True:
     if count > 218:
         count = 0
         start = time.time()
-        #cv2.imwrite(f"test{count}.jpg", image)
+        #cv2.imwrite(f"C:/Users/programmer/Desktop/CHROMDINO/img/test{count}.jpg", image)
         ahead += 1
         print(ahead)
 
