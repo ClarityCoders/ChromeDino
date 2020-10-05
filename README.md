@@ -6,13 +6,11 @@
 - Please check out the video if you need any extra help! 
 
 ## Setup
-- Run CreateData.py it will allow you to locate the game window and data files.
-- Then use utils \ CreateImages.py to turn those into image files.
-- This images can be opened in paint to get pixel locations.
-
-## Run Agent
-- Once you have pixel locations updated you can use change those in the RunEpisodes.py file.
-- This file will allow you to run your agent for multiple episodes and gather stats.
+- Take screen shot and update the region the bot should see in CreateData.py
+- Then run CreateData.py it will create files in the img folder while you manually play the game.
+- Use the images in a program like pain to locate the values of the enemies.
+- Update pixel locations and the screenshot region in RunEpisodes.py
+- RunEpisodes.py will also create a stat file for you while it runs episodes. 
 
 - YouTube <a href="https://www.youtube.com/claritycoders" target="_blank">Clarity Coders</a>
 - Chat with me! <a href="https://discord.gg/cAWW5qq" target="_blank">Discord</a>
