@@ -57,7 +57,7 @@ for i in range(5000):
             keyboard.press("down")
 
         # White background end test
-        if image[45][395] and not image[35][370] and not image[35][420] == black:
+        if image[45][395] and not image[35][370] and not image[35][420]:
             keyboard.release("space")
             keyboard.release("down")
             break
