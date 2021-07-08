@@ -41,9 +41,7 @@ for i in range(5000):
 
         if image[144][376] == black:
             ahead += 4
-            holder = black
-            black = white
-            white = holder
+            black, white = white, black
 
         # Three cactus small
         if sum([image[92][ahead - negative_ahead] for negative_ahead in range(3)]):
@@ -53,7 +51,7 @@ for i in range(5000):
             keyboard.release("space")
 
         # DUCK
-        elif image[54][ahead]:
+        elif not image[54][ahead]:
             keyboard.press("down")
 
         # White background end test
